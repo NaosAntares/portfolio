@@ -1,0 +1,89 @@
+.hero-section {
+    .hero-header {
+        display: flex;
+        justify-content: center;
+        .hero-header-title {
+            font-family: $title-font;
+            font-size: 12.65em;
+            margin: 0;
+            z-index: 10;
+            position: absolute;
+            top: 50px;
+        }
+    }
+
+    .hero-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 15vh auto 0 auto;
+        padding: 0;
+        height: 55.72vh;
+        width: 83.59vw;
+
+        .hero-image {
+            flex-shrink: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+    }
+
+    .hero-headline {
+        position: absolute;
+        bottom: 350px;
+        right: 80px;
+        font-size: 35px;
+        width: 640px;
+        text-align: right;
+    }
+
+    .cta-container {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        margin-top: 50px;
+        align-items: center;
+        .cta-arrow {
+            align-self: center;
+        }
+    }
+}
+
+.section-header {
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+
+    .section-title{
+        font-family: $title-font;
+        margin: 40px 0 100px 0;
+        font-size: 8em;
+    }
+}
+
+.project-container { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 83.59vw;
+    margin: 0 auto 100px auto;
+
+    .text-container {
+        display: flex;
+        flex-flow: column wrap;
+        margin-right: 200px;
+        .project-name {
+            font-size: 3em;
+        }
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+
+    .text-container {
+        margin-right: 0;
+        margin-left: 200px;
+    }
+}
